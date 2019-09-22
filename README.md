@@ -9,11 +9,13 @@ npm install
 # Run Unit Tests
 npm test
 
-# Run Express Server & React in develop environment - wait for few seconds to start server and frontend applications, open http://localhost:3000
+# Run Express Server & React in develop environment - wait for few seconds to launch server and frontend applications
 npm run dev
+# open http://localhost:3000
 
-# Run Express Server & React in production environment - wait for few seconds to start server and frontend applications, open http://localhost:5000
-npm run prod
+# Run Express Server & React in production environment - wait for few seconds to launch server and frontend applications
+npm run dev
+# open http://localhost:5000
 
 # Install frontend dependencies
 cd frontend
