@@ -1,0 +1,6 @@
+*.js.map
+node_modules/
+.temp/
+build/
+*.log
+*.lock

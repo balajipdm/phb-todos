@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://balaji:IsfGsW4NDgPdD2pG@cluster0-ctha5.mongodb.net/phb-todos?retryWrites=true&w=majority",
+  "jwtSecret": "plcrRXWXlGDFL2wLmPHDeITiUY075HMEaDTjsINljSvaD9mDlHK22BYSlClWEUZW"
+}
