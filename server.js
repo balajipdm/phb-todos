@@ -28,13 +28,12 @@ app.use('/api/auth', authRouter);
 app.use('/api/todos', todosRouter);
 
 // Serve static assets in production
-if (process.env.NODE_ENV === 'production') {
-  // Set static folder
-  app.use(express.static('frontend/build'));
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
-  });
-}
+// Set static folder
+app.use(express.static('frontend/build'));
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
+});
+
 
 app.listen(PORT, () => console.log(`Todos Server started on port ${PORT}`));
 

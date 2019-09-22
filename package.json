@@ -5,8 +5,9 @@
   "main": "server.js",
   "scripts": {
     "server": "npm install && nodemon --exec babel-node --presets babel-preset-env ./server.js",
-    "frontend": "npm install --prefix frontend && npm start --prefix frontend",
-    "start": "concurrently \"npm run server\" \"npm run frontend\"",
+    "frontend": "cd frontend && npm install && npm run build",
+    "dev": "concurrently \"npm run server\" \"cd frontend && npm run start\"",
+    "prod": "npm run frontend && npm run server",
     "test": "mocha --recursive --require babel-register  --require babel-polyfill --exit"
   },
   "author": "Balaji Peddamuthu <balaji.pdm@gmail.com>",
