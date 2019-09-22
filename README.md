@@ -9,12 +9,12 @@ npm install
 # Run Unit Tests
 npm test
 
+# Run Express Server & React from root in Dev Environment - wait for few seconds to start server and frontend applications concurrently
+npm run start
+
 # Install frontend dependencies
 cd frontend
 npm install
-
-# Run Express Server & React from root in Dev Environment
-npm run start
 
 # Build for production
 cd frontend

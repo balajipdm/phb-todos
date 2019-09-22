@@ -4,8 +4,8 @@
   "description": "Pointy Haired Boss Todos Application Server",
   "main": "server.js",
   "scripts": {
-    "server": "nodemon --exec babel-node --presets babel-preset-env ./server.js",
-    "frontend": "npm start --prefix frontend",
+    "server": "npm install && nodemon --exec babel-node --presets babel-preset-env ./server.js",
+    "frontend": "npm install --prefix frontend && npm start --prefix frontend",
     "start": "concurrently \"npm run server\" \"npm run frontend\"",
     "test": "mocha --recursive --require babel-register  --require babel-polyfill --exit"
   },
